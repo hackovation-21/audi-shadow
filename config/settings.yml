@@ -1,0 +1,33 @@
+catalog:
+  services: # catalog must advertise at least one service
+    - id: 5085f1cb-e093-4630-8795-843b76018eb8
+      name: audi-carmanager
+      description: Provides credentials to Audi car controll app.
+      bindable: true
+      tags:
+        - audi
+      metadata:
+        displayName: Audi Creds Provider
+        imageUrl: https://raw2.github.com/github/media/master/octocats/blacktocat-32.png
+        longDescription:
+        providerDisplayName:
+        documentationUrl:
+        supportUrl:
+      plans: # a service has one or more plans
+        - id: c05855e7-a55d-4ba1-b462-7579df7514f4
+          name: public
+          description: All repositories are public
+          metadata:
+            bullets:
+              - Repos are public
+            costs:
+              - amount:
+                  usd: 0.0
+                unit: MONTHLY
+            displayName: Public
+
+# credentials for CF to authenticate with the broker
+basic_auth:
+  username: team-21@hackovation.io
+  password: CBFukAeFtz8GRy7XENxD
+
