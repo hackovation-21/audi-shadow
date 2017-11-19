@@ -41,7 +41,7 @@ $(function() {
       if ($(this).prop('checked') === true){
 		  console.log('truess');
 		  $.ajax({
-		  url: 'php_request.php?dev_id=0&status=1',
+		  url: 'http://52.178.91.17/normal/php_request.php?dev_id=0&status=1',
 		  type: 'PUT',
 		  success: function(data) {
 			//play with data
@@ -50,7 +50,7 @@ $(function() {
 	  }else{
 		  console.log('falsee');
 		  $.ajax({
-		  url: 'php_request.php?dev_id=0&status=0',
+		  url: 'http://52.178.91.17/normal/php_request.php?dev_id=0&status=0',
 		  type: 'PUT',
 		  success: function(data) {
 			//play with data
@@ -68,7 +68,7 @@ $(function() {
       if ($(this).prop('checked') === true){
 		  console.log('truess');
 		  $.ajax({
-		  url: 'php_request.php?dev_id=1&status=1',
+		  url: 'http://52.178.91.17/normal/php_request.php?dev_id=1&status=1',
 		  type: 'PUT',
 		  success: function(data) {
 			//play with data
@@ -77,7 +77,7 @@ $(function() {
 	  }else{
 		  console.log('falsee');
 		  $.ajax({
-		  url: 'php_request.php?dev_id=1&status=0',
+		  url: 'http://52.178.91.17/normal/php_request.php?dev_id=1&status=0',
 		  type: 'PUT',
 		  success: function(data) {
 			//play with data
