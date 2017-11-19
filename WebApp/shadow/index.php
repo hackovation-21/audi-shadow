@@ -34,7 +34,8 @@
 
 <script>
 
-
+function Update()
+{
 $.ajax({
 		  url: 'search.php?device_id=10000&signal_id=0',
 		  type: 'PUT',
@@ -106,10 +107,10 @@ $(function() {
 	  }
     })
   })
+}
 
-  setTimeout(function(){
-   window.location.reload(1);
-}, 5000);
+Update();
+  setTimeout(Update, 2000);
 </script>
 
 
