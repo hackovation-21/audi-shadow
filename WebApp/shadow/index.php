@@ -36,9 +36,7 @@
 
 
 $.ajax({
-		  url: <?php
-          echo "'"."http://".json_decode($_ENV['VCAP_SERVICES'],true)['audi-carmanager'][0]['credentials']['uri']."/shadow/search.php?device_id=10000&signal_id=0"."'";
-           ?>,
+		  url: 'search.php?device_id=10000&signal_id=0',
 		  type: 'PUT',
 		  success: function(data) {
 			console.log(data);
@@ -49,9 +47,7 @@ $.ajax({
 		});
 
 	$.ajax({
-		  url: <?php
-          echo "'"."http://".json_decode($_ENV['VCAP_SERVICES'],true)['audi-carmanager'][0]['credentials']['uri']."/shadow/search.php?device_id=10000&signal_id=1"."'";
-           ?>,
+		  url: 'search.php?device_id=10000&signal_id=1',
 		  type: 'PUT',
 		  success: function(data) {
 			console.log(data);
@@ -66,9 +62,7 @@ $(function() {
       if ($(this).prop('checked') === true){
 		  console.log('truess');
 		  $.ajax({
-		  url: <?php
-          echo "'"."http://".json_decode($_ENV['VCAP_SERVICES'],true)['audi-carmanager'][0]['credentials']['uri']."/shadow/php_request.php?dev_id=0&status=1"."'";
-           ?>,
+		  url: 'php_request.php?dev_id=0&status=1',
 		  type: 'PUT',
 		  success: function(data) {
 			//play with data
@@ -77,9 +71,7 @@ $(function() {
 	  }else{
 		  console.log('falsee');
 		  $.ajax({
-		  url: <?php
-          echo "'"."http://".json_decode($_ENV['VCAP_SERVICES'],true)['audi-carmanager'][0]['credentials']['uri']."/shadow/php_request.php?dev_id=0&status=0"."'";
-           ?>,
+		  url: 'php_request.php?dev_id=0&status=0',
 		  type: 'PUT',
 		  success: function(data) {
 			//play with data
@@ -96,9 +88,7 @@ $(function() {
       if ($(this).prop('checked') === true){
 		  console.log('truess');
 		  $.ajax({
-		  url: <?php
-          echo "'"."http://".json_decode($_ENV['VCAP_SERVICES'],true)['audi-carmanager'][0]['credentials']['uri']."/shadow/php_request.php?dev_id=1&status=1"."'";
-           ?>,
+		  url: 'php_request.php?dev_id=1&status=1',
 		  type: 'PUT',
 		  success: function(data) {
 			//play with data
@@ -107,9 +97,7 @@ $(function() {
 	  }else{
 		  console.log('falsee');
 		  $.ajax({
-		  url: <?php
-          echo "'"."http://".json_decode($_ENV['VCAP_SERVICES'],true)['audi-carmanager'][0]['credentials']['uri']."/shadow/php_request.php?dev_id=1&status=0"."'";
-           ?>,
+		  url: 'php_request.php?dev_id=1&status=0',
 		  type: 'PUT',
 		  success: function(data) {
 			//play with data
