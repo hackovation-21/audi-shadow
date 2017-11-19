@@ -33,7 +33,6 @@
 
 
 <script>
-
 function Update()
 {
 $.ajax({
@@ -84,7 +83,7 @@ $(function() {
 
     })
 
-  })
+  });
   $(function() {
     $('#toggle-event2').change(function() {
       if ($(this).prop('checked') === true){
@@ -107,7 +106,7 @@ $(function() {
 		});
 	  }
     })
-  })
+  });
 
 Update();
   setInterval(Update, 2000);
