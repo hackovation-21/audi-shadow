@@ -57,6 +57,7 @@ $.ajax({
 			$('#toggle-event2').prop('checked', Boolean(data.split(":")[1] == 1));
 		  }
 		});
+}
 
 $(function() {
     $('#toggle-event1').change(function() {
@@ -107,7 +108,6 @@ $(function() {
 	  }
     })
   })
-}
 
 Update();
   setTimeout(Update, 2000);
