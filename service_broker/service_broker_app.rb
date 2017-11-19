@@ -31,10 +31,8 @@ class ServiceBrokerApp < Sinatra::Base
       status 201
       {"credentials" =>
         {
-            name: 'any',
-            uri: 'any1',
-            password:'any_password'
-        }
+            uri: '52.178.91.17',
+          }
       }.to_json
   end
 
@@ -42,6 +40,7 @@ class ServiceBrokerApp < Sinatra::Base
   delete '/v2/service_instances/:instance_id/service_bindings/:id' do |instance_id, binding_id|
     content_type :json
 
+      status 200
       {}.to_json
   end
 
@@ -50,6 +49,7 @@ class ServiceBrokerApp < Sinatra::Base
     content_type :json
 
     status 200
+    {}.to_json
   end
 
   #helper methods
