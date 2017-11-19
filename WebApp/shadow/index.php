@@ -110,7 +110,7 @@ $(function() {
   })
 
 Update();
-  setTimeout(Update, 2000);
+  setInterval(Update, 2000);
 </script>
 
 
