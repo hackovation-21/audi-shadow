@@ -11,5 +11,4 @@ $server_output = curl_exec ($ch);
 $httpcode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 curl_close ($ch);
 http_response_code($httpcode);
-header('Content-Type: application/json');
 echo $server_output;
